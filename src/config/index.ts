@@ -22,6 +22,7 @@ export class App {
 
     private middlewares() {
         this.app.use(morgan('dev'));
+        this.app.use(cors());
         this.app.use(express.json()); // leer json raw
         this.app.use(express.urlencoded({ extended: false })); //leer json form
     }

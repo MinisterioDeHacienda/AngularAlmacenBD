@@ -36,6 +36,10 @@ Venta.init(
             type: DataTypes.FLOAT,
             allowNull: false
         },
+        ciudadExp: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         impuestos: {
             type: DataTypes.FLOAT,
             allowNull: false,

@@ -41,9 +41,9 @@ export class ClienteController {
     }
 
     public async create(req: Request, res: Response) {
-        let cliente: ClienteI = req.body
+        
         try {
-
+            const cliente= await Cliente.create(req.body)
             res.status(200).json({ cliente })
         } catch (error) {
 
@@ -97,4 +97,9 @@ public async deleteCliente(req: Request, res: Response) {
             console.error(error)
         }
     }
+
+public async deleteCliente_Tipo2 (req: Request, res: Response){
+    
+}
+
 }

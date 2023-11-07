@@ -9,6 +9,7 @@ export class Producto extends Model {
     public precio!: number;
     public stockMin!: number;
     public cantidad!: number;
+    public TipoProductoId!: number;
 }
 
 
@@ -19,6 +20,7 @@ export interface ProductoI {
     precio: number;
     stockMin: number;
     cantidad: number;
+    TipoProductoId: number;
 }
 
 

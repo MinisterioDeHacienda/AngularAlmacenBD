@@ -3,22 +3,20 @@ import { database } from "../database/db";
 import { Producto } from "./Producto";
 
 export class TipoProducto extends Model {
-    public TipoProductoId!:number;
-    public name!: string;
+    public nombre!: string;
 }
 
 
 
 export interface TipoProductoI {
-    TipoProductoId:number;
-    name: string;
+    nombre: string;
 }
 
 
 
 TipoProducto.init(
     {
-        name: {
+        nombre: {
             type: DataTypes.STRING,
             allowNull: false
         }, 
