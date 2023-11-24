@@ -40,7 +40,7 @@ export class ClienteController {
         }
     }
 
-    public async create(req: Request, res: Response) {
+    public async createCliente(req: Request, res: Response) {
         
         try {
             const cliente= await Cliente.create(req.body)

@@ -32,6 +32,7 @@ export class App {
         this.routePrv.ventaRoutes.routes(this.app)
         this.routePrv.productoRoutes.routes(this.app)
         this.routePrv.tiRoutes.routes(this.app)
+        this.routePrv.productoVentaRoutes.routes(this.app)
     }
 
     async listen() {

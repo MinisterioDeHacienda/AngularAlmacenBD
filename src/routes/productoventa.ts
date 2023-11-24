@@ -2,7 +2,7 @@ import { Request, Response, Application, Router } from "express";
 
 import { ProductoVentaController } from '../controllers/ProductoVenta.controller'
 
-export class VentaRoutes {
+export class ProductoVentaRoutes {
     public productoVentasController: ProductoVentaController = new ProductoVentaController();
 
     public routes(app: Application): void {

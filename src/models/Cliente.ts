@@ -34,7 +34,6 @@ Cliente.init(
     telefonoCliente: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true
       },
     correoCliente: {
         type: DataTypes.STRING,
